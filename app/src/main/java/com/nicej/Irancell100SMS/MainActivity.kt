@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
                 sendSms(edit1.text.toString(), edit2.text.toString(), edit3.text.toString())
             } else {
                 requestContactPermission();
-            }
+            }///
         }
     }
 
