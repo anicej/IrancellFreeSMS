@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:layoutDirection="ltr"
+    android:background="#FFF"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ارسال"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/myfont"
+        android:background="@color/colorAccent"
+        app:layout_constraintTop_toBottomOf="@id/edit3" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="شماره گیرنده"
+        android:textSize="16sp"
+        android:textColor="#000"
+        android:fontFamily="@font/myfont"
+        app:layout_constraintBaseline_toBaselineOf="@id/edit1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="@id/textView2" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textSize="16sp"
+        android:textColor="#000"
+        android:text="تعداد اس ام اس"
+        app:layout_constraintBaseline_toBaselineOf="@id/edit2"
+        android:fontFamily="@font/myfont"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="#000"
+        android:layout_marginTop="16sp"
+        android:text="متن اس ام اس"
+        android:fontFamily="@font/myfont"
+        app:layout_constraintBaseline_toBaselineOf="@id/edit3"
+        app:layout_constraintBottom_toBottomOf="@id/edit3"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/edit1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="200dp"
+        android:layout_marginRight="16sp"
+        android:inputType="number"
+        style="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintEnd_toStartOf="@id/textView2"
+        app:layout_constraintTop_toBottomOf="parent"
+
+        android:fontFamily="@font/myfont"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edit2"
+        android:minWidth="200dp"
+        android:textSize="16sp"
+        android:textColor="#000"
+        android:fontFamily="@font/myfont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_marginRight="16sp"
+        app:layout_constraintEnd_toStartOf="@id/textView2"
+        app:layout_constraintTop_toBottomOf="@id/edit1" />
+
+    <EditText
+        android:id="@+id/edit3"
+        android:fontFamily="@font/myfont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="#000"
+        android:layout_marginEnd="20dp"
+
+        android:inputType="textPersonName"
+        android:minWidth="200dp"
+        app:layout_constraintEnd_toStartOf="@id/textView3"
+        app:layout_constraintTop_toBottomOf="@id/edit2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
